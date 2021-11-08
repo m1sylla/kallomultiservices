@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/mohamed1sylla/kallomultiservices/issues"
   },
-  "homepage": "https://github.com/mohamed1sylla/kallomultiservices#readme"
+  "homepage": "https://github.com/mohamed1sylla/kallomultiservices#readme",
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
 }
