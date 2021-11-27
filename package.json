@@ -1,22 +1,37 @@
 {
-  "name": "kallomultiservices",
-  "version": "1.0.0",
-  "description": "Kallomutliservices website",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mohamed1sylla/kallomultiservices.git"
-  },
-  "author": "Mohamed SYLLA",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mohamed1sylla/kallomultiservices/issues"
-  },
-  "homepage": "https://github.com/mohamed1sylla/kallomultiservices#readme",
-  "dependencies": {
-    "jquery": "^3.6.0"
-  }
+    "name": "kallomultiservices",
+    "version": "1.0.0",
+    "description": "Kallomutliservices website",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mohamed1sylla/kallomultiservices.git"
+    },
+    "author": "Mohamed SYLLA",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/mohamed1sylla/kallomultiservices/issues"
+    },
+    "homepage": "https://github.com/mohamed1sylla/kallomultiservices#readme",
+    "dependencies": {
+        "jquery": "^3.6.0",
+        "normalize.css": "^8.0.1"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.0",
+        "browser-sync": "^2.27.7",
+        "gulp": "^4.0.2",
+        "gulp-changed": "^4.0.3",
+        "gulp-concat": "^2.6.1",
+        "gulp-imagemin": "^7.1.0",
+        "gulp-minify-css": "^1.2.4",
+        "gulp-postcss": "^9.0.1",
+        "gulp-uglify": "^3.0.2",
+        "gulp-watch": "^5.0.1",
+        "postcss": "^8.4.1",
+        "postcss-import": "^14.0.2"
+    }
 }
