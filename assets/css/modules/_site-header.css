@@ -1,0 +1,44 @@
+.site-header {
+    padding-top: 20px;
+    &__logo {
+        display: inline-block;
+        border: 1px solid red;
+        &>div {
+            display: inline-block;
+            height: 100%;
+            border: 1px solid red;
+        }
+    }
+    &__contact {
+        float: right;
+        height: 100%;
+        border: 1px solid red;
+        @util clearfix;
+    }
+    &__menu {
+        background-color: $mainBlue;
+        & li {
+            float: left;
+            margin-right: 20px;
+        }
+        & li:last-child {
+            margin-right: 0;
+        }
+        & ul {
+            margin: 0;
+            @util clearfix;
+        }
+        &__link {
+            display: inline-block;
+            border: 4px solid rgba(0, 0, 0, 0);
+            padding: 6px;
+            color: #fff;
+        }
+        &__link:hover {
+            border-bottom-color: #fff;
+        }
+        &__link--active {
+            border-bottom-color: #fff;
+        }
+    }
+}
