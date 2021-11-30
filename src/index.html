@@ -28,9 +28,10 @@
     <title>Commerce & Services - Gardiennage, Méngagères, Nettoyage | kallomultiservices</title>
     <meta name="keywords" content="Vente en ligne, Location, Prestation de services, Guinée, Conakry">
     <meta name="description" content="Vente en ligne des chaussures. Livraison partout à Conakry. Prestation des services">
+    <meta name="google-site-verification" content="ADE-ikjz6p_yI0Zfj19zF9FQ0XMy2qVR-S3ojV628xg" />
 
     <link rel="stylesheet" href="./css/styles.css">
-
+    <script src="./js/script.js"></script>
 </head>
 
 <body>
@@ -75,7 +76,7 @@
             </div>
         </div>
 
-        <div>
+        <div class="wrapper">
             <h1>Faites nous confiance pour accompagner votre entreprise</h1>
             <div>
                 Nettoyage
@@ -87,15 +88,15 @@
                 Ménagères
             </div>
             <div>
-                Prestation de services
-            </div>
-            <div>
                 Produits
             </div>
         </div>
-        <div>
-            <div>
-                Localisation
+        <div class="wrapper">
+            <h1>Nous trouver</h1>
+            <div class="location">
+                <h2>Localisation</h2>
+                <div class="location__map" id="gmap"></div>
+                <iframe class="location__map" id="gmap_canvas" src="https://maps.google.com/maps?q=9.6391635,%20-13.6131348&t=&z=12&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
             </div>
             <div>
                 <span>Contact</span>
@@ -104,16 +105,7 @@
                 <span>Email: kallomultiservices@gmail.com</span>
             </div>
         </div>
-    </main>
-    <footer>
-        <div>
-            <div>
-                facebbok feed
-            </div>
-            <div>
-                Les liens
-            </div>
-        </div>
+
         <div class="ceo-word wrapper">
             <div>
                 <img src="./images/dg-kallomultiservices.png" alt="DG kallomultiservices">
@@ -128,14 +120,26 @@
                 </p>
             </div>
         </div>
+    </main>
+    <footer>
+        <div>
+            <div>
+                facebbok feed
+            </div>
+            <div>
+                Les liens
+            </div>
+        </div>
         <div class="copyright">
             <div class="wrapper">
-                &copy; kallomultiservices. Tout droit réservé. devéloppé par <a href="#">Agence Sylla</a>
+                &copy; kallomultiservices. Tout droit réservé. devéloppé par <a href="#">Mohamed Sylla</a>
             </div>
         </div>
     </footer>
 
-    <script src=""></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATxOeAV4Ef1MNkBzq7RX1YJ7rQQHgnYao&callback=initMap&libraries=&v=weekly" async></script>
+
 </body>
 
 </html>

@@ -37,10 +37,10 @@
 
  //Gulp JS tasks
  gulp.task('js', function() {
-     return gulp.src('./assets/js/**/*.js')
-         .pipe(concat(script.js))
+     return gulp.src('./assets/js/*.js')
+         .pipe(concat('script.js'))
          .pipe(uglify())
-         .pipe(gulp.dest('./src/js'));
+         .pipe(gulp.dest('./src/js/'));
  });
 
 
