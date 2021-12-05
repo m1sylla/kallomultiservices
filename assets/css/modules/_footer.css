@@ -1,0 +1,20 @@
+.footer {
+    margin-top: 20px;
+    padding-top: 20px;
+    background-color: #a5a5f8;
+    color: #030336;
+    &__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        &__name {
+            color: $mainBlue;
+        }
+    }
+    &__copyright {
+        background-color: #ccc;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+}

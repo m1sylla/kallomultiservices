@@ -19,7 +19,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="./images/favicons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png">
-    <link rel="manifest" href="./favicons/manifest.json">
+    <link rel="manifest" href="./images/favicons/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="./images/favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -30,34 +30,50 @@
     <meta name="description" content="Vente en ligne des chaussures. Livraison partout à Conakry. Prestation des services">
     <meta name="google-site-verification" content="ADE-ikjz6p_yI0Zfj19zF9FQ0XMy2qVR-S3ojV628xg" />
 
-    <link rel="stylesheet" href="./css/styles.css">
-    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/styles.min.css">
+
 </head>
 
 <body>
     <header class="site-header">
-        <div class="wrapper">
+        <div class="wrapper site-header__top">
             <div class="site-header__logo">
-                <img class="site-header__logo__image" src="./images/logo-kms.png" alt="logo kallomultiservices - kms">
+                <img class="site-header__logo-image" src="./images/logo-kallomultiservices-kms.png" alt="logo kallomultiservices - kms">
                 <div>
-                    <span class="site-header__logo__name">kallomultiservices</span>
-                    <span class="site-header__logo__service">Commerce & Services</span>
+                    <span class="site-header__logo-name">kallomultiservices</span>
+                    <span class="site-header__logo-service">Commerce & Services</span>
                 </div>
             </div>
             <div class="site-header__contact">
                 <span>(+224) 623 31 31 41</span>
-                <span><a href="https://www.facebook.com/kallomultiservices/">facebbok</a></span>
+            </div>
+
+            <div class="site-header__menu-icon">
+                <div class="site-header__menu-icon--t"></div>
+                <div class="site-header__menu-icon--m"></div>
+                <div class="site-header__menu-icon--b"></div>
             </div>
         </div>
 
         <div class="site-header__menu">
             <nav class="wrapper">
-                <ul>
-                    <li><a class="site-header__menu__link" href="https://kallomultiservices.com/">Accueil</a></li>
-                    <li><a class="site-header__menu__link" href="https://kallomultiservices.com/nettoyage.html">Nettoyage</a></li>
-                    <li><a class="site-header__menu__link" href="https://kallomultiservices.com/gardiennage.html">Gardiennage</a></li>
-                    <li><a class="site-header__menu__link" href="https://kallomultiservices.com/menageres.html">Ménagères</a></li>
-                    <li><a class="site-header__menu__link" href="https://kallomultiservices.com/produits.html">Produits</a></li>
+                <ul class="site-header__menu-content">
+                    <!--https://kallomultiservices.com/-->
+                    <li class="site-header__menu-item">
+                        <a class="site-header__menu-link" href="">Accueil</a>
+                    </li>
+                    <li class="site-header__menu-item">
+                        <a class="site-header__menu-link" href="/nettoyage.html">Nettoyage</a>
+                    </li>
+                    <li class="site-header__menu-item">
+                        <a class="site-header__menu-link" href="/gardiennage.html">Gardiennage</a>
+                    </li class="site-header__menu-item">
+                    <li class="site-header__menu-item">
+                        <a class="site-header__menu-link" href="/menageres.html">Ménagères</a>
+                    </li>
+                    <li class="site-header__menu-item site-header__menu-item--last">
+                        <a class="site-header__menu-link" href="/produits.html">Produits</a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -65,41 +81,63 @@
     <main>
         <!-- <a href="/">Accueil</a> / -->
         <div class="hero">
-            <div class="wrapper">
-                hero Nettoyage
+            <div>
+                <picture>
+                    <source srcset="images/hero-kallomultiservices-femme-menage-guinee--l.jpg" media="(min-width: 1380px)">
+                    <source srcset="images/hero-kallomultiservices-femme-menage-guinee--m.jpg" media="(min-width: 990px)">
+                    <source srcset="images/hero-kallomultiservices-femme-menage-guinee--s.jpg" media="(min-width: 640px)">
+                    <img srcset="images/hero-kallomultiservices-femme-menage-guinee--xs.jpg" alt="" class="large-hero__image">
+                </picture>
+                <div class="wrapper">
+                    <h1>Nettoyage de vos locaux</h1>
+                </div>
             </div>
             <div class="wrapper">
-                hero Gardiennage
+                <h1>Gardiennage de vos locaux</h1>
             </div>
             <div class="wrapper">
-                hero Ménagères
+                <h1>Touver une femme de ménage</h1>
             </div>
         </div>
 
         <div class="wrapper">
             <h1>Faites nous confiance pour accompagner votre entreprise</h1>
             <div>
-                Nettoyage
+                <img src="" alt="">
+                <h2>Nettoyage de vos locaux</h2>
+                <p>
+                    Nous aidons votre entreprise à maintenir votre environnement de travail propre et confortable. <a href="">en savoir plus</a>
+                </p>
             </div>
             <div>
-                Gardiennage
+                <img src="" alt="">
+                <h2>Gardiennage de locaux</h2>
+                Pour la sécurité de vos locaux et vos matériels. <a href="">en savoir plus</a>
             </div>
             <div>
-                Ménagères
+                <img src="" alt="">
+                <h2>Ménagères</h2>
+                Nous trouvons des femmes de ménages pour vos foyers.
+                <a href="">en savoir plus</a>
             </div>
             <div>
-                Produits
+                <img src="" alt="">
+                <h2>Produits</h2>
+                <p>
+                    Commander vos articles de notre stock
+                    <a href="">en savoir plus</a>
+                </p>
             </div>
         </div>
         <div class="wrapper">
-            <h1>Nous trouver</h1>
+            <!--<h1>Nous trouver</h1>
             <div class="location">
                 <h2>Localisation</h2>
                 <div class="location__map" id="gmap"></div>
                 <iframe class="location__map" id="gmap_canvas" src="https://maps.google.com/maps?q=9.6391635,%20-13.6131348&t=&z=12&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-            </div>
+            </div>-->
             <div>
-                <span>Contact</span>
+                <h1>Contact</h1>
                 <span>Adresse: En face de l'Université Gandhi Bloc A</span>
                 <span>Tél: (+224) 623 31 31 41</span>
                 <span>Email: kallomultiservices@gmail.com</span>
@@ -121,24 +159,31 @@
             </div>
         </div>
     </main>
-    <footer>
-        <div>
-            <div>
-                facebbok feed
-            </div>
+    <footer class="footer">
+        <div class="wrapper footer__logo">
+            <img class="footer__logo__image" src="./images/logo-kms.png" alt="logo kallomultiservices - kms">
+            <h1 class="footer__logo__name">kallomultiservices</h1>
+            <p class="footer__logo__service">Commerce & Services</p>
+        </div>
+
+        <div class="wrapper footer__links-contact">
             <div>
                 Les liens
             </div>
+            <div>
+                <span>Contact: (+224) 623 31 31 41 / 664 58 02 71 / 657 56 27 66</span>
+                <span>Email: kallomultiservices@gmail.com</span>
+                <span><a href="https://www.facebook.com/kallomultiservices/">facebbok</a></span>
+            </div>
         </div>
-        <div class="copyright">
+        <div class="footer__copyright">
             <div class="wrapper">
                 &copy; kallomultiservices. Tout droit réservé. devéloppé par <a href="#">Mohamed Sylla</a>
             </div>
         </div>
     </footer>
 
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATxOeAV4Ef1MNkBzq7RX1YJ7rQQHgnYao&callback=initMap&libraries=&v=weekly" async></script>
+    <script src="./js/script.min.js"></script>
 
 </body>
 

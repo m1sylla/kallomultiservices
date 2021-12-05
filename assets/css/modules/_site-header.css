@@ -1,43 +1,115 @@
 .site-header {
     padding-top: 20px;
+    &__top {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @mixin atMedium {
+            flex-direction: row;
+        }
+    }
     &__logo {
-        display: inline-block;
-        border: 1px solid red;
-        &>div {
-            display: inline-block;
-            height: 100%;
-            border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        @mixin atSmall {
+            flex-direction: row;
+        }
+        &-image {
+            width: 60px;
+            height: auto;
+            margin-left: 30px;
+            @mixin atSmall {
+                margin-right: 10px;
+                margin-left: 0;
+            }
+        }
+        &-name {
+            color: $mainBlue;
+            display: block;
+            font-size: 1.8em;
+            font-weight: 800;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            @mixin atSmall {
+                margin-top: 0;
+                font-size: 2em;
+                font-weight: 800;
+            }
+            @mixin atMedium {
+                font-size: 2.2em;
+            }
+        }
+        &-service {
+            display: block;
+            text-align: left;
+            font-weight: 550;
+            color: $mainRed;
         }
     }
     &__contact {
-        float: right;
-        height: 100%;
-        border: 1px solid red;
-        @util clearfix;
+        display: flex;
+        margin-top: 5px;
+        @mixin atMedium {
+            margin-top: 0;
+        }
     }
     &__menu {
+        margin-top: 20px;
         background-color: $mainBlue;
-        & li {
-            float: left;
-            margin-right: 20px;
+        &-icon {
+            background-color: #ababad;
+            border: 1px solid rgba(#000, .4);
+            border-radius: 5px;
+            padding: 10px;
+            position: absolute;
+            cursor: pointer;
+            top: 20px;
+            right: 20px;
+            @mixin atMedium {
+                display: none;
+            }
+            &--t {
+                width: 20px;
+                height: 3px;
+                background-color: #fff;
+            }
+            &--m {
+                width: 20px;
+                height: 3px;
+                margin: 5px 0;
+                background-color: #fff;
+            }
+            &--b {
+                width: 20px;
+                height: 3px;
+                background-color: #fff;
+            }
         }
-        & li:last-child {
-            margin-right: 0;
-        }
-        & ul {
+        &-content {
+            display: none;
             margin: 0;
             @util clearfix;
+            @mixin atMedium {
+                display: block;
+            }
         }
-        &__link {
+        &-item {
+            float: left;
+            margin-right: 20px;
+            &--last {
+                margin-right: 0;
+            }
+        }
+        &-link {
             display: inline-block;
             border: 4px solid rgba(0, 0, 0, 0);
-            padding: 6px;
+            padding: 7px 6px;
             color: #fff;
         }
-        &__link:hover {
+        &-link:hover {
             border-bottom-color: #fff;
         }
-        &__link--active {
+        &-link--active {
             border-bottom-color: #fff;
         }
     }
