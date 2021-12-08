@@ -4,6 +4,7 @@
 @import 'bases/_global';
 @import 'modules/_wrapper';
 @import 'modules/_site-header';
+@import 'modules/_large-hero';
 @import 'modules/_location';
 @import 'modules/_ceo-word';
 @import 'modules/_footer';

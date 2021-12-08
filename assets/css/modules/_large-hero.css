@@ -1,0 +1,168 @@
+.large-hero {
+    position: relative;
+    &__element {
+        display: none;
+        overflow: hidden;
+        @mixin atLarge {
+            height: 500px;
+        }
+    }
+    &__image {
+        display: block;
+        width: 100%;
+        &--nettoyage {
+            animation-name: animate-image-nettoyage;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+        }
+        &--gardiennage {
+            animation-name: animate-image-gardiennage;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+        }
+        &--menage {
+            animation-name: animate-image-menage;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+        }
+    }
+    &__text-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .5);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 1px solid #343434;
+    }
+    &__title {
+        font-size: 2.2em;
+        font-weight: 700;
+        color: $mainBlue;
+        line-height: 1.1;
+        border: 1px solid #343434;
+        animation-name: animate-title;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        @mixin atSmall {
+            font-size: 3em;
+            font-weight: 900;
+        }
+    }
+    &__description {
+        font-size: 1.1em;
+        font-weight: 400;
+        color: #fff;
+        margin-top: -10px;
+        border: 1px solid #343434;
+        animation-name: animate-description;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        @mixin atSmall {
+            font-size: 1.3em;
+            font-weight: 400;
+        }
+    }
+    &__link {
+        display: inline-block;
+        font-weight: 500;
+        color: #666;
+        text-decoration: underline #666;
+        padding: 4px 8px;
+        background-color: #ccc;
+        animation-name: animate-link;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+    }
+    &__indicator {
+        position: absolute;
+        width: 100%;
+        bottom: 20px;
+        text-align: center;
+        &-dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #ccc;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+            &--active {
+                background-color: $mainBlue;
+            }
+        }
+    }
+}
+
+@keyframes animate-image-nettoyage {
+    from {
+        transform: scale(1.4);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes animate-image-gardiennage {
+    from {
+        margin-left: 100%;
+    }
+    to {
+        margin-left: 0%;
+    }
+}
+
+@keyframes animate-image-menage {
+    from {
+        opacity: .3
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes animate-title {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes animate-description {
+    0% {
+        opacity: 0;
+    }
+    67% {
+        opacity: 0;
+        margin-right: -70%;
+    }
+    80% {
+        opacity: .4;
+    }
+    100% {
+        opacity: 1;
+        margin-left: initial;
+    }
+}
+
+@keyframes animate-link {
+    0% {
+        opacity: 0;
+    }
+    75.1% {
+        opacity: 0;
+        margin-top: 100%;
+    }
+    100% {
+        opacity: 1;
+        top: initial;
+    }
+}

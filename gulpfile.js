@@ -28,7 +28,7 @@
  //Gulp CSS tasks
  gulp.task('css', function() {
      return gulp.src('./assets/css/styles.css')
-         .pipe(postCSS([cssImport(), mixins(), cssvars(), nested(), utilities(), hexrgba(), autoprefixer()]))
+         .pipe(postCSS([cssImport(), mixins(), cssvars(), hexrgba(), nested(), utilities(), autoprefixer()]))
          .pipe(cleanCSS())
          .pipe(rename({
              suffix: '.min'
@@ -49,7 +49,7 @@
 
  //Gulp JS tasks
  gulp.task('js', function() {
-     return gulp.src(['./assets/js/modules/MobileMenu.js'])
+     return gulp.src(['./assets/js/modules/*.js', './assets/js/App.js'])
          .pipe(concat('script.js'))
          .pipe(babel({
              presets: ['@babel/env']
