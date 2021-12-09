@@ -1,0 +1,41 @@
+.services {
+    padding-top: 50px;
+    &__title {
+        margin-bottom: 25px;
+        font-size: 2.5rem;
+        font-weight: 1000;
+        @mixin atMedium {
+            font-size: 3rem;
+        }
+    }
+    &__subtitle {
+        font-weight: 500;
+        font-size: 2rem;
+        margin-top: 10px;
+        margin-bottom: 0;
+        @mixin atMedium {
+            font-weight: 600;
+            font-size: 2.4rem;
+        }
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        @mixin atLarge {
+            flex-direction: row;
+        }
+    }
+    &__description {
+        @mixin atLarge {
+            padding-left: 20px;
+        }
+    }
+    &__link {
+        font-weight: bold;
+        text-decoration: underline;
+        &:hover {
+            color: $mainRed;
+        }
+    }
+}

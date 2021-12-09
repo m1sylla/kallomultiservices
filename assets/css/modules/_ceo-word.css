@@ -1,3 +1,30 @@
 .ceo-word {
     display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    &__title {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        @mixin atMedium {
+            flex-direction: row;
+        }
+    }
+    &__image {
+        display: block;
+        max-width: 300px;
+    }
+    &__name {
+        display: inline-block;
+        margin-top: 10px;
+    }
+    &__description {
+        @mixin atMedium {
+            padding-left: 15px;
+        }
+    }
 }

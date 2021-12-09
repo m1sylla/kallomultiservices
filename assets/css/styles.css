@@ -5,6 +5,7 @@
 @import 'modules/_wrapper';
 @import 'modules/_site-header';
 @import 'modules/_large-hero';
-@import 'modules/_location';
+@import 'modules/_services';
+@import 'modules/_find-us';
 @import 'modules/_ceo-word';
 @import 'modules/_footer';
