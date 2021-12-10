@@ -1,5 +1,4 @@
 .find-us {
-    padding-top: 30px;
     display: flex;
     flex-direction: column;
     &__title {
@@ -23,6 +22,11 @@
     &__infos {
         display: flex;
         flex-direction: column;
+        &--address {
+            @mixin atMedium {
+                padding-right: 30px;
+            }
+        }
     }
     &__map-link {
         font-weight: bold;

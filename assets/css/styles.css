@@ -5,7 +5,11 @@
 @import 'modules/_wrapper';
 @import 'modules/_site-header';
 @import 'modules/_large-hero';
+@import 'modules/_section';
 @import 'modules/_services';
+@import 'modules/_security-services';
+@import 'modules/_nettoyage-services';
+@import 'modules/_sitemap';
 @import 'modules/_find-us';
 @import 'modules/_ceo-word';
 @import 'modules/_footer';

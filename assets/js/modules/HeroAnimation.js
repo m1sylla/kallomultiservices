@@ -1,6 +1,3 @@
-var heroIndex = 0;
-showHero();
-
 function showHero() {
     var i;
     var heros = document.querySelectorAll('.large-hero__element');

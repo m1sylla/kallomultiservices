@@ -1,0 +1,11 @@
+.security-services {
+    &__list li {
+        padding-bottom: 20px;
+    }
+    &__list li::before {
+        content: '\1F449';
+        margin-right: 15px;
+        color: transparent;
+        text-shadow: 0 0 0 $mainText;
+    }
+}

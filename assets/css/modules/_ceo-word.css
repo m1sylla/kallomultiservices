@@ -1,10 +1,8 @@
 .ceo-word {
     display: flex;
     flex-direction: column;
-    margin-top: 3rem;
     &__title {
         text-align: center;
-        font-size: 2.5rem;
         margin-bottom: 20px;
     }
     &__content {

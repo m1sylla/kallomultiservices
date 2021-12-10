@@ -1,0 +1,11 @@
+.nettoyage-services {
+    &__list li {
+        padding-bottom: 20px;
+    }
+    &__list li::before {
+        content: '\26A1';
+        margin-right: 15px;
+        color: transparent;
+        text-shadow: 0 0 0 $mainText;
+    }
+}

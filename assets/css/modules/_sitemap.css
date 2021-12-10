@@ -1,0 +1,10 @@
+.sitemap {
+    &__link {
+        display: block;
+        margin: 10px 0;
+        padding: 5px 0;
+        &:hover {
+            color: $mainRed;
+        }
+    }
+}

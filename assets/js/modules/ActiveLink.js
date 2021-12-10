@@ -8,8 +8,8 @@ class ActiveLink {
 
     activate() {
         for (var i = 0; i < this.links.length; i++) {
-            var pages = this.links[i].href.split("/");
-            if (pages[pages.length - 1] == this.currentPage) {
+            var pageLink = this.links[i].href.split("/");
+            if (pageLink[pageLink.length - 1] == this.currentPage) {
                 this.links[i].classList.add('site-header__menu-link--active');
             } else {
                 this.links[i].classList.remove('site-header__menu-link--active');
